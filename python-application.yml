@@ -4,7 +4,10 @@
 name: Python package
 
 on: [push, pull_request]
-  run: echo "Running pytest..." && pytest && pytest --cov # Can I run on multiple lines?
+  run: echo "Running pytest..." 
+  run: pytest
+  run: echo "Code coverage..."
+  run: pytest --cov
 
 jobs:
   build:
