@@ -24,5 +24,6 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Test with pytest
+      run: echo "Running pytest and code coverage..."
       run: pytest
       run: pytest --cov
